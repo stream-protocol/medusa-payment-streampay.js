@@ -1,10 +1,59 @@
 # Medusa Payment StreamPay Node.js Dev
 
-Creating a Stream Payment Processor for MedusaJS with Solana blockchain and web3 technology involves configuring various aspects. Below is a rough example of how you can implement the StreamPay Payment Plugin with the required configurations and details. Please note that this is a simplified example, and you should consult Solana and MedusaJS documentation for a production-ready solution.
+Creating a Stream Payment Processor for MedusaJS with Solana blockchain and web3 technology involves configuring various aspects. Below is a rough example of how you can implement the Stream**Pay** Payment Plugin with the required configurations and details. Please note that this is a simplified example, and you should consult Solana and MedusaJS documentation for a production-ready solution.
 
-**1. StreamPay Configuration Example:**
+### 1. Creating a Folder and file structure for a Node.js
 
-First, we need to create a configuration for Strea**mPay** with Solana network settings. Ensure you have Solana's Web3 library installed.
+The folder and file structure for a Node.js package that includes the StreamPay Payment Processor for MedusaJS with Solana blockchain integration might look like the following:
+
+```
+streampay-medusajs-project/
+├── config/
+│   ├── streampay.js        # Configuration for StreamPay
+│   ├── solana.js           # Solana network configuration
+│   └── medusa.js           # MedusaJS configuration (if needed)
+│
+├── lib/
+│   ├── streampay.js        # Stream Payment Processor (StreamPay) implementation
+│   ├── merchantWallet.js   # Merchant wallet management
+│   ├── fees.js             # Fee calculation functions
+│   └── medusaIntegration.js # MedusaJS integration (if needed)
+│
+├── node_modules/            # Node.js dependencies (generated)
+│
+├── package.json             # Node.js project configuration and dependencies
+├── package-lock.json        # Lock file for Node.js dependencies
+├── README.md                # Project documentation
+│
+├── app.js                   # Main application entry point
+├── index.js                 # Alternate entry point (if needed)
+│
+└── .gitignore               # Git ignore file to exclude unnecessary files
+```
+
+#### Explanation of key folders and files:
+
+- **config/**: This directory contains configuration files for StreamPay, Solana, and MedusaJS. You may need to create these configuration files based on your specific requirements.
+
+- **lib/**: This directory houses the core logic of your StreamPay Payment Processor, including StreamPay implementation, merchant wallet management, fee calculation functions, and MedusaJS integration (if needed).
+
+- **node_modules/**: This folder is generated automatically by Node.js and contains all project dependencies. You don't need to create it manually.
+
+- **package.json**: This file holds your Node.js project's configuration, including dependencies, scripts, and other metadata.
+
+- **package-lock.json**: This is an automatically generated file that locks the versions of your project's dependencies to ensure consistency.
+
+- **README.md**: A documentation file that provides information about your project, its purpose, setup instructions, and usage guidelines.
+
+- **app.js** or **index.js**: These are the main entry points for your Node.js application. You can choose either one, depending on your project structure and preferences.
+
+- **.gitignore**: A Git configuration file that specifies which files and directories should be excluded from version control. It helps keep your repository clean by excluding unnecessary files like node_modules.
+
+Please note that this is a basic project structure outline. Depending on the complexity of your project and your development workflow, you may need to create additional directories or files. Additionally, you should tailor the structure to your specific implementation and coding conventions.
+
+**2. StreamPay Configuration Example:**
+
+Then, we need to create a configuration for Strea**mPay** with Solana network settings. Ensure you have Solana's Web3 library installed.
 
 ```javascript
 const solanaWeb3 = require('@solana/web3.js');
@@ -113,4 +162,4 @@ const StreamPayPaymentProvider = {
 module.exports = StreamPayPaymentProvider;
 ```
 
-Remember to adjust and customize the code as needed for your specific use case and adhere to best practices for handling payments and security. This example provides a high-level overview of how to create a StreamPay Payment Processor with Solana blockchain integration for MedusaJS.
+Remember to adjust and customize the code as needed for your specific use case and adhere to best practices for handling payments and security. This example provides a high-level overview of how to create a Stream**Pay** Payment Processor with Solana blockchain integration for MedusaJS.
