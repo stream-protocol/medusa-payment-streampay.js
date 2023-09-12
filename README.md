@@ -33,27 +33,25 @@ streampay-medusajs-project/
 
 #### Explanation of key folders and files:
 
-- **config/**: This directory contains configuration files for StreamPay, Solana, and MedusaJS. You may need to create these configuration files based on your specific requirements.
+- **config/**: This directory contains configuration files for Stream**Pay**, Solana, and MedusaJS. Configuration files based on specific requirements.
 
-- **lib/**: This directory houses the core logic of your StreamPay Payment Processor, including StreamPay implementation, merchant wallet management, fee calculation functions, and MedusaJS integration (if needed).
+- **lib/**: This directory houses the core logic of the Stream Payment Processor, including Stream**Pay** implementation, merchant wallet management, fee calculation functions, and MedusaJS integration (if needed).
 
-- **node_modules/**: This folder is generated automatically by Node.js and contains all project dependencies. You don't need to create it manually.
+- **node_modules/**: This folder is generated automatically by Node.js and contains all Stream**Pay** project dependencies.
 
-- **package.json**: This file holds your Node.js project's configuration, including dependencies, scripts, and other metadata.
+- **package.json**: This file holds Stream**Pay** Node.js project's configuration, including dependencies, scripts, and other metadata.
 
-- **package-lock.json**: This is an automatically generated file that locks the versions of your project's dependencies to ensure consistency.
+- **package-lock.json**: This is an automatically generated file that locks the versions of the Stream**Pay** project's dependencies to ensure consistency.
 
-- **README.md**: A documentation file that provides information about your project, its purpose, setup instructions, and usage guidelines.
+- **app.js** or **index.js**: These are the main entry points for Stream**Pay** Node.js application. 
 
-- **app.js** or **index.js**: These are the main entry points for your Node.js application. You can choose either one, depending on your project structure and preferences.
+- **.gitignore**: A Git configuration file that specifies which files and directories should be excluded from version control. It helps keep the repository clean by excluding unnecessary files like node_modules.
 
-- **.gitignore**: A Git configuration file that specifies which files and directories should be excluded from version control. It helps keep your repository clean by excluding unnecessary files like node_modules.
-
-Please note that this is a basic project structure outline. Depending on the complexity of your project and your development workflow, you may need to create additional directories or files. Additionally, you should tailor the structure to your specific implementation and coding conventions.
+Please note that this is a basic **Stream**Payments project structure outline. Depending on the complexity of the Stream**Pay** project development workflow. Create additional directories or files. Additionally, it should tailor the structure to Stream**Pay** specific implementation and coding conventions.
 
 **2. StreamPay Configuration Example:**
 
-Then, we need to create a configuration for Strea**mPay** with Solana network settings. Ensure you have Solana's Web3 library installed.
+Then, we need to create a configuration for Stream**Pay** with Solana network settings. Ensure you have Solana's Web3 library installed.
 
 ```javascript
 const solanaWeb3 = require('@solana/web3.js');
@@ -70,7 +68,7 @@ const streamPayConfig = {
 
 **3. Merchant Wallet Features:**
 
-Incorporate merchant wallet features that allow MedusaJS to interact with the Solana blockchain. You can use Solana's wallet API to create and manage merchant wallets.
+Incorporate merchant wallet features that allow MedusaJS to interact with the Solana blockchain. Use StreamPay or Solana's wallet API to create and manage merchant wallets.
 
 ```javascript
 const { Keypair, Transaction, SystemProgram, sendAndConfirmTransaction } = solanaWeb3;
@@ -99,7 +97,7 @@ const createMerchantWallet = async () => {
 
 **4. Merchant Fees and Solana Transaction Fees:**
 
-Define how you'll calculate and handle merchant fees and Solana transaction fees. This will depend on your specific business logic and requirements.
+A basic example of how to calculate and handle merchant fees and Solana transaction fees. This will depend on Stream**Pay** specific business logic and requirements. Remember to add Strea**mPay** 1.5% Operational fees.
 
 ```javascript
 // Calculate and deduct merchant fees
