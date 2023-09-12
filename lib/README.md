@@ -73,7 +73,7 @@ For detailed configuration options, refer to the [Configuration Documentation](d
 
 ## Features
 
-- **Solana Integration**: Seamlessly integrate with the Solana blockchain for secure and fast payment processing.
+- **Solana Integration**: Seamlessly integrates with the Solana blockchain for secure and fast payment processing.
 - **Merchant Wallet Management**: Create and manage merchant wallets easily with built-in functions.
 - **Fee Calculation**: Calculate merchant fees and Solana transaction fees based on your business logic.
 - **MedusaJS Integration**: Integrate StreamPay with MedusaJS for a complete e-commerce solution (optional).
@@ -91,4 +91,3 @@ Welcome contributions from the community. If you'd like to contribute to the Str
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
