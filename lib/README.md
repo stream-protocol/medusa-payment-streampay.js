@@ -1,6 +1,7 @@
-# StreamPay Web3 Node.js Library
 
 ![StreamPay Logo](streampay-logo.png)
+
+# StreamPay Web3 Node.js Library
 
 The Stream**Pay** Node.js library allows you to easily integrate StreamPay's payment processing capabilities into your Node.js applications. With this library, you can handle payments on the Solana blockchain and streamline your e-commerce platform's payment processing.
 
