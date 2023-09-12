@@ -68,7 +68,7 @@ const streamPayConfig = {
 };
 ```
 
-**2. Merchant Wallet Features:**
+**3. Merchant Wallet Features:**
 
 Incorporate merchant wallet features that allow MedusaJS to interact with the Solana blockchain. You can use Solana's wallet API to create and manage merchant wallets.
 
@@ -97,7 +97,7 @@ const createMerchantWallet = async () => {
 // Use createMerchantWallet() to create merchant wallets as needed
 ```
 
-**3. Merchant Fees and Solana Transaction Fees:**
+**4. Merchant Fees and Solana Transaction Fees:**
 
 Define how you'll calculate and handle merchant fees and Solana transaction fees. This will depend on your specific business logic and requirements.
 
@@ -121,7 +121,7 @@ const calculateSolanaTransactionFees = async (transaction) => {
 // Use calculateMerchantFees() and calculateSolanaTransactionFees() as needed
 ```
 
-**4. MedusaJS Integration:**
+**5. MedusaJS Integration:**
 
 Finally, integrate these configurations and functions into MedusaJS as a payment provider, following the MedusaJS documentation you provided as a reference. You'll need to adapt this code to fit the MedusaJS architecture and interface.
 
